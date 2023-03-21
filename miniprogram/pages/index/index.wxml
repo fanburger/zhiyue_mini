@@ -1,0 +1,3 @@
+<view class="page-con">
+  <van-button type="primary" custom-style="border-radius: 24rpx;width: 80vw;">Login</van-button>
+</view>
