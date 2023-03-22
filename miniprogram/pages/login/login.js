@@ -1,4 +1,5 @@
-// pages/login/login.js
+const app = getApp()
+
 Page({
 
   /**
@@ -6,6 +7,42 @@ Page({
    */
   data: {
 
+  },
+
+  login: function () {
+    wx.login({
+      success: res => {
+        wx.cloud.callFunction({
+          name: 'userManager',
+          data: {
+            type: 'login',
+            phone: '',
+            password: ''
+          },
+          success: res => {
+            let {
+              code,
+              msg,
+              data
+            } = res.result
+            if (code) {
+              wx.showToast({
+                title: '无法登录',
+                icon: 'error'
+              })
+            }
+            wx.setStorageSync('openid', data.openid);
+            app.globalData.openid = data.openid;
+          },
+          fail: err => {
+            console.error(err);
+          }
+        });
+      },
+      fail: err => {
+        console.log(err);
+      }
+    });
   },
 
   /**

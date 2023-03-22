@@ -1,2 +1,7 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="page-con">
+  <van-button 
+  round 
+  custom-style="width: 90vw;" 
+  type="primary" 
+  bind:click="login">Login</van-button>
+</view>
