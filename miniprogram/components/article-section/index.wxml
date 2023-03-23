@@ -1,0 +1,10 @@
+<view class="article-sec">
+  <view class="title">
+    <view class="blue-line">
+    </view>
+    <text style="font-size: 32rpx;font-weight: bold;">{{ title }}</text>
+  </view>
+  <view class="content">
+    {{ content }}
+  </view>
+</view>

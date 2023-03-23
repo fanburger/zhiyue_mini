@@ -9,6 +9,14 @@
   flex-direction: column;
 }
 
+.ai-c{
+  align-items: center;
+}
+
+.jc-c{
+  justify-content: center;
+}
+
 .flex-c-c {
   justify-content: center;
   align-items: center;
@@ -19,17 +27,48 @@
   justify-content: space-between;
 }
 
+.c-main{
+  color: #1985DE;
+}
+
 .c-link{
   color: #4C69E1;
 }
 
+.c-white{
+  background-color: white;
+}
+
+.c-no-select{
+  color: #A8D6F3;
+}
+
+.c-wb{
+  color: #595959;
+}
+
+.f-large{
+  font-size: 52rpx;
+}
+
+.f-smaller{
+  font-size: 12rpx;
+}
 
 .w-vw-90{
   width: 90vw;
 }
 
+.w-92{
+  width: 92rpx;
+}
+
 .gap-36{
   gap: 36rpx;
+}
+
+.gap-14{
+  gap: 14rpx;
 }
 
 .mt-64{

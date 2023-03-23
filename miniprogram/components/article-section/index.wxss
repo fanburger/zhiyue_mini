@@ -1,0 +1,24 @@
+.article-sec{
+  display: flex;
+  flex-direction: column;
+  gap: 6rpx;
+}
+
+.title{
+  display: flex;
+  align-items: center;
+  gap: 22rpx;
+}
+
+.blue-line{
+  width: 6rpx;
+  height: 28rpx;
+  border-radius: 12rpx;
+  background: #4CABF9;
+}
+
+.content{
+  font-size: 22rpx;
+  font-weight: normal;
+  text-indent: 1rem;
+}

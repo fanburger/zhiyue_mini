@@ -1,2 +1,107 @@
-<!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="page-con">
+  <image src="../../images/main-bg.svg" mode="widthFix" style="width: 100%;" />
+  <view class="tab-con">
+    <van-tabs active="{{ activeTab }}" animated color="#2C5AB3" title-active-color="#2C5AB3" title-inactive-color="#CFCFCF">
+      <van-tab title="预约选座" name="book">
+        <view class="page-con gap-36">
+          <view class="overview-card flex-col flex-r-sb mt-64 gap-36">
+            <view class="flex-r-sb">
+              <view class="flex-col flex-c-c">
+                <text class="c-main">当前在馆人数</text>
+                <text class="c-main f-large">926</text>
+              </view>
+              <view class="flex-col flex-c-c gap-14">
+                <text class="c-no-select">您还没有选座</text>
+                <van-tag round type="danger" color="#FFE5E5" text-color="#FF7A7A" size="large">Standing</van-tag>
+              </view>
+            </view>
+            <view class="flex-r-sb">
+              <view class="flex-col">
+                <text class="c-no-select">日期</text>
+                <text>2023 年 3 月 8 日</text>
+              </view>
+              <view class="flex-col">
+                <text class="c-no-select">时间</text>
+                <text>14 ：35 ：21</text>
+              </view>
+            </view>
+            <van-button round custom-style="width:100%" color="linear-gradient(101deg, #5496D7 17%, #2C5AB3 94%)">预约座位</van-button>
+          </view>
+          <view class="room-list flex-col w-vw-90 gap-36">
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.full}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="cross" color="#FFE5E5"><text style="color:#FF7A7A;">204/204</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="规则" name="rule">
+        <view class="page-con gap-14 mt-64">
+          <view class="w-pc-90 gap-36 flex-col">
+            <article-section wx:for="{{rules}}" title="{{item.title}}" content="{{item.content}}" wx:key="index"></article-section>
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="日志" name="log">
+        <view class="page-con">
+          <view class="log-card flex-col gap-36">
+            <view class="flex-col">
+              <text class="c-gray">Status</text>
+              <text class="c-main f-large">预约已结束，已签到</text>
+            </view>
+            <view class="flex-col">
+              <text class="c-gray">Starting time</text>
+              <text class="c-wb">2023-3-7 14：23</text>
+            </view>
+            <view class="flex-col">
+              <text class="c-gray">Ending time</text>
+              <text class="c-wb">2023-3-7 20：46</text>
+            </view>
+            <van-button round custom-style="width: 100%;" color="linear-gradient(101deg, #5496D7 17%, #2C5AB3 94%)">删除</van-button>
+          </view>
+          <view class="log-card flex-col gap-36">
+            <view class="flex-col">
+              <text class="c-gray">Status</text>
+              <text class="c-main f-large">预约已结束，已签到</text>
+            </view>
+            <view class="flex-col">
+              <text class="c-gray">Starting time</text>
+              <text class="c-wb">2023-3-7 14：23</text>
+            </view>
+            <view class="flex-col">
+              <text class="c-gray">Ending time</text>
+              <text class="c-wb">2023-3-7 20：46</text>
+            </view>
+            <van-button round custom-style="width: 100%;" color="linear-gradient(101deg, #5496D7 17%, #2C5AB3 94%)">删除</van-button>
+          </view>
+          <view class="log-card flex-col gap-36">
+            <view class="flex-col">
+              <text class="c-gray">Status</text>
+              <text class="c-main f-large">预约已结束，已签到</text>
+            </view>
+            <view class="flex-col">
+              <text class="c-gray">Starting time</text>
+              <text class="c-wb">2023-3-7 14：23</text>
+            </view>
+            <view class="flex-col">
+              <text class="c-gray">Ending time</text>
+              <text class="c-wb">2023-3-7 20：46</text>
+            </view>
+            <van-button round custom-style="width: 100%;" color="linear-gradient(101deg, #5496D7 17%, #2C5AB3 94%)">删除</van-button>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>
