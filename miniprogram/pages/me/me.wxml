@@ -1,2 +1,22 @@
-<!--pages/me/me.wxml-->
-<text>pages/me/me.wxml</text>
+<view class="page-con">
+  <image src="../../images/main-bg.svg" mode="widthFix" style="width: 100%;z-index: -1;" />
+  <view class="per-info flex-col ai-c gap-14">
+    <image src="../../images/default-avatar.svg" mode="widthFix" style="width: 144rpx;" />
+    <view class="c-main f-large">
+      王伟
+    </view>
+    <view class="flex-r gap-18">
+      <van-button round icon="star" size="small" color="#FFD600">100</van-button>
+      <van-button round icon="star" size="small" color="#86D6DD">library reader</van-button>
+    </view>
+  </view>
+  <view class="opt-list w-pc-90">
+    <van-cell-group border="{{false}}">
+      <van-cell icon="medal" title="我的信用" is-link/>
+      <van-cell icon="todo-list" title="使用记录" is-link/>
+      <van-cell icon="column" title="使用规则" is-link/>
+      <van-cell icon="graphic" title="选座引导" is-link/>
+      <van-cell icon="service" title="意见反馈" is-link/>
+    </van-cell-group>
+  </view>
+</view>
