@@ -14,8 +14,30 @@
   align-items: center;
 }
 
+.flex-r-sb{
+  display: flex;
+  justify-content: space-between;
+}
+
+.c-link{
+  color: #4C69E1;
+}
+
+
 .w-vw-90{
   width: 90vw;
+}
+
+.gap-36{
+  gap: 36rpx;
+}
+
+.mt-64{
+  margin-top: 64rpx;
+}
+
+.c-gray{
+  color: #dbdbdb;
 }
 
 .btn-radius{

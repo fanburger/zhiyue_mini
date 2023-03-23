@@ -6,18 +6,26 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    phone: '',
+    password: '',
+    isLogin: true,
+    policyChecked: false,
+    inputCustomStyle: 'border-radius: 66rpx;border: 6rpx solid #86D6DD;box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);'
   },
 
   login: function () {
+    let {
+      phone,
+      password
+    } = this.data
     wx.login({
       success: res => {
         wx.cloud.callFunction({
           name: 'userManager',
           data: {
             type: 'login',
-            phone: '',
-            password: ''
+            phone,
+            password
           },
           success: res => {
             let {
@@ -30,9 +38,11 @@ Page({
                 title: '无法登录',
                 icon: 'error'
               })
+            } else {
+              wx.setStorageSync('openid', data.openid);
+              app.globalData.openid = data.openid;
             }
-            wx.setStorageSync('openid', data.openid);
-            app.globalData.openid = data.openid;
+
           },
           fail: err => {
             console.error(err);
@@ -43,6 +53,18 @@ Page({
         console.log(err);
       }
     });
+  },
+
+  switchType: function () {
+    this.setData({
+      isLogin: !this.data.isLogin
+    })
+  },
+
+  swPolicyChecked: function () {
+    this.setData({
+      policyChecked: !this.data.policyChecked
+    })
   },
 
   /**
