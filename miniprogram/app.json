@@ -26,8 +26,7 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [
-      {
+    "list": [{
         "pagePath": "pages/rooms/rooms",
         "iconPath": "/images/sort.png",
         "selectedIconPath": "/images/sort-selected.png"
