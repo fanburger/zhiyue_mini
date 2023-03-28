@@ -1,17 +1,11 @@
-// pages/rooms/rooms.js
+// pages/bookSeat/book.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    activeTab: 'room1',
 
-    // style variable
-    roomStyle: {
-      full: 'border: 2rpx solid #FFE5E5;background: #FFF5F5;',
-      nfull: 'border: 2px solid #EEEEEE;background: #FFFFFF;'
-    }
   },
 
   /**

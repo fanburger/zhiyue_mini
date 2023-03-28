@@ -83,6 +83,10 @@
   margin-top: 64rpx;
 }
 
+.mt-32{
+  margin-top: 32rpx;
+}
+
 .c-gray{
   color: #dbdbdb;
 }

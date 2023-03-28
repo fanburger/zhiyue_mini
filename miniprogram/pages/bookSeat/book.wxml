@@ -1,0 +1,22 @@
+<view class="page-con book-bg">
+  <view class="page-con map-card">
+    <view class="book-title">
+      一楼自修室
+    </view>
+    <image src="../../images/map.svg" mode="widthFix"/>
+    <view class="flex-r-sb w-pc-90 mt-32">
+      <van-button round color="#F4FAFF"><text style="color: black;">使用中</text></van-button>
+      <van-button round color="#FFE5E5"><text style="color: black;">已选中</text></van-button>
+      <van-button round color="#FAFAFA"><text style="color: black;">空闲中</text></van-button>
+    </view>
+    <view class="flex-r-sb w-pc-90 ai-c mt-32">
+      <text>您选中的座位是：</text>
+      <van-button round color="#86D6DD">28</van-button>
+    </view>
+    <view class="w-pc-90 mt-32">
+      <van-button block round color="linear-gradient(99deg, #5496D7 17%, #2C5AB3 94%)">确定选座</van-button>
+    </view>
+    <view class="mt-64">
+    </view>
+  </view>
+</view>

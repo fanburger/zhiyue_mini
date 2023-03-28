@@ -1,10 +1,10 @@
 {
   "pages": [
-    "pages/index/index",
     "pages/login/login",
     "pages/home/home",
     "pages/me/me",
-    "pages/rooms/rooms"
+    "pages/rooms/rooms",
+    "pages/bookSeat/book"
   ],
   "usingComponents": {
     "van-button": "@vant/weapp/button/index",
@@ -27,7 +27,8 @@
     "navigationBarTextStyle": "black"
   },
   "tabBar": {
-    "list": [{
+    "list": [
+      {
         "pagePath": "pages/rooms/rooms",
         "iconPath": "/images/sort.png",
         "selectedIconPath": "/images/sort-selected.png"

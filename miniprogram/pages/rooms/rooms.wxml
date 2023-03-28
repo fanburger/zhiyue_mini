@@ -1,2 +1,70 @@
-<!--pages/rooms/rooms.wxml-->
-<text>pages/rooms/rooms.wxml</text>
+<view class="page-con">
+  <image src="../../images/main-bg.png" mode="widthFix" style="width: 100%;" />
+  <view class="tab-con">
+    <van-tabs active="{{ activeTab }}" animated color="#2C5AB3" title-active-color="#2C5AB3" title-inactive-color="#CFCFCF">
+      <van-tab title="516校区" name="room1">
+        <view class="page-con gap-36 mt-64">
+          <view class="room-list flex-col w-vw-90 gap-36">
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.full}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="cross" color="#FFE5E5"><text style="color:#FF7A7A;">204/204</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>二楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>110/120</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>三楼大厅</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>200/245</text></van-button>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="334校区" name="room2">
+        <view class="page-con gap-36 mt-64">
+          <view class="room-list flex-col w-vw-90 gap-36">
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.full}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="cross" color="#FFE5E5"><text style="color:#FF7A7A;">204/204</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+      <van-tab title="默认分组" name="room3">
+        <view class="page-con gap-36 mt-64">
+          <view class="room-list flex-col w-vw-90 gap-36">
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.full}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="cross" color="#FFE5E5"><text style="color:#FF7A7A;">204/204</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+            </view>
+            <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
+              <text>一楼自修室</text>
+              <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
+              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+            </view>
+          </view>
+        </view>
+      </van-tab>
+    </van-tabs>
+  </view>
+</view>

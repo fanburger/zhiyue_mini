@@ -14,45 +14,9 @@ Page({
   },
 
   login: function () {
-    let {
-      phone,
-      password
-    } = this.data
-    wx.login({
-      success: res => {
-        wx.cloud.callFunction({
-          name: 'userManager',
-          data: {
-            type: 'login',
-            phone,
-            password
-          },
-          success: res => {
-            let {
-              code,
-              msg,
-              data
-            } = res.result
-            if (code) {
-              wx.showToast({
-                title: '无法登录',
-                icon: 'error'
-              })
-            } else {
-              wx.setStorageSync('openid', data.openid);
-              app.globalData.openid = data.openid;
-            }
-
-          },
-          fail: err => {
-            console.error(err);
-          }
-        });
-      },
-      fail: err => {
-        console.log(err);
-      }
-    });
+    wx.switchTab({
+      url: '/pages/home/home'
+    })
   },
 
   switchType: function () {

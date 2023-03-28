@@ -1,5 +1,5 @@
 <view class="page-con">
-  <image src="../../images/main-bg.svg" mode="widthFix" style="width: 100%;z-index: -1;" />
+  <image src="../../images/main-bg.png" mode="widthFix" style="width: 100%;z-index: -1;" />
   <view class="per-info flex-col ai-c gap-14">
     <image src="../../images/default-avatar.svg" mode="widthFix" style="width: 144rpx;" />
     <view class="c-main f-large">

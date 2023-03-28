@@ -1,5 +1,5 @@
 <view class="page-con">
-  <image src="../../images/main-bg.svg" mode="widthFix" style="width: 100%;" />
+  <image src="../../images/main-bg.png" mode="widthFix" style="width: 100%;" />
   <view class="tab-con">
     <van-tabs active="{{ activeTab }}" animated color="#2C5AB3" title-active-color="#2C5AB3" title-inactive-color="#CFCFCF">
       <van-tab title="预约选座" name="book">
@@ -8,7 +8,7 @@
             <view class="flex-r-sb">
               <view class="flex-col flex-c-c">
                 <text class="c-main">当前在馆人数</text>
-                <text class="c-main f-large">926</text>
+                <text class="c-main f-large">514</text>
               </view>
               <view class="flex-col flex-c-c gap-14">
                 <text class="c-no-select">您还没有选座</text>
@@ -18,7 +18,7 @@
             <view class="flex-r-sb">
               <view class="flex-col">
                 <text class="c-no-select">日期</text>
-                <text>2023 年 3 月 8 日</text>
+                <text>2023 年 3 月 29 日</text>
               </view>
               <view class="flex-col">
                 <text class="c-no-select">时间</text>
@@ -34,20 +34,21 @@
               <van-button round icon="cross" color="#FFE5E5"><text style="color:#FF7A7A;">204/204</text></van-button>
             </view>
             <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
-              <text>一楼自修室</text>
+              <text>二楼自修室</text>
               <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
-              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+              <van-button round icon="success" color="#86D6DD"><text>110/120</text></van-button>
             </view>
             <view class="flex-r-sb ai-c room" style="{{roomStyle.nfull}}">
-              <text>一楼自修室</text>
+              <text>三楼大厅</text>
               <text class="f-smaller c-gray">7:00~22:30开馆前可提前7个小时预定</text>
-              <van-button round icon="success" color="#86D6DD"><text>110/204</text></van-button>
+              <van-button round icon="success" color="#86D6DD"><text>200/245</text></van-button>
             </view>
           </view>
         </view>
       </van-tab>
       <van-tab title="规则" name="rule">
         <view class="page-con gap-14 mt-64">
+          <image src="../../images/rule-tip.svg" mode="widthFix"/>
           <view class="w-pc-90 gap-36 flex-col">
             <article-section wx:for="{{rules}}" title="{{item.title}}" content="{{item.content}}" wx:key="index"></article-section>
           </view>
@@ -77,26 +78,11 @@
             </view>
             <view class="flex-col">
               <text class="c-gray">Starting time</text>
-              <text class="c-wb">2023-3-7 14：23</text>
+              <text class="c-wb">2023-3-6 13：53</text>
             </view>
             <view class="flex-col">
               <text class="c-gray">Ending time</text>
-              <text class="c-wb">2023-3-7 20：46</text>
-            </view>
-            <van-button round custom-style="width: 100%;" color="linear-gradient(101deg, #5496D7 17%, #2C5AB3 94%)">删除</van-button>
-          </view>
-          <view class="log-card flex-col gap-36">
-            <view class="flex-col">
-              <text class="c-gray">Status</text>
-              <text class="c-main f-large">预约已结束，已签到</text>
-            </view>
-            <view class="flex-col">
-              <text class="c-gray">Starting time</text>
-              <text class="c-wb">2023-3-7 14：23</text>
-            </view>
-            <view class="flex-col">
-              <text class="c-gray">Ending time</text>
-              <text class="c-wb">2023-3-7 20：46</text>
+              <text class="c-wb">2023-3-6 19：35</text>
             </view>
             <van-button round custom-style="width: 100%;" color="linear-gradient(101deg, #5496D7 17%, #2C5AB3 94%)">删除</van-button>
           </view>
