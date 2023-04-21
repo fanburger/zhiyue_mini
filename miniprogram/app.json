@@ -1,14 +1,49 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/home/home",
+    "pages/me/me",
+    "pages/rooms/rooms",
+    "pages/bookSeat/book"
   ],
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-icon": "@vant/weapp/icon/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-cell-group": "@vant/weapp/cell-group/index",
+    "van-checkbox": "@vant/weapp/checkbox/index",
+    "van-checkbox-group": "@vant/weapp/checkbox-group/index",
+    "van-tab": "@vant/weapp/tab/index",
+    "van-tabs": "@vant/weapp/tabs/index",
+    "van-tag": "@vant/weapp/tag/index",
+    "van-image": "@vant/weapp/image/index"
+  },
   "window": {
     "backgroundColor": "#F6F6F6",
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#F6F6F6",
     "navigationBarTitleText": "知约",
     "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/rooms/rooms",
+        "iconPath": "/images/sort.png",
+        "selectedIconPath": "/images/sort-selected.png"
+      },
+      {
+        "pagePath": "pages/home/home",
+        "iconPath": "/images/book.png",
+        "selectedIconPath": "/images/book-selected.png"
+      },
+      {
+        "pagePath": "pages/me/me",
+        "iconPath": "/images/me.png",
+        "selectedIconPath": "/images/me-selected.png"
+      }
+    ]
   },
   "sitemapLocation": "sitemap.json"
 }

@@ -1,34 +1,17 @@
-const app = getApp()
-
+// pages/rooms/rooms.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    phone: '',
-    password: '',
-    isLogin: true,
-    policyChecked: false,
-    inputCustomStyle: 'border-radius: 66rpx;border: 6rpx solid #86D6DD;box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);'
-  },
+    activeTab: 'room1',
 
-  login: function () {
-    wx.switchTab({
-      url: '/pages/home/home'
-    })
-  },
-
-  switchType: function () {
-    this.setData({
-      isLogin: !this.data.isLogin
-    })
-  },
-
-  swPolicyChecked: function () {
-    this.setData({
-      policyChecked: !this.data.policyChecked
-    })
+    // style variable
+    roomStyle: {
+      full: 'border: 2rpx solid #FFE5E5;background: #FFF5F5;',
+      nfull: 'border: 2px solid #EEEEEE;background: #FFFFFF;'
+    }
   },
 
   /**

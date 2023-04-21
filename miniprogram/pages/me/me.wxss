@@ -1,0 +1,9 @@
+.per-info{
+  position: absolute;
+  top: 60rpx;
+  width: 100%;
+}
+
+.opt-list{
+  margin-top: 120rpx;
+}

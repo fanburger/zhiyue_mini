@@ -1,2 +1,22 @@
-<!--pages/login/login.wxml-->
-<text>pages/login/login.wxml</text>
+<view class="page-con gap-36">
+  <image src="../../images/login-logo.svg" mode="widthFix" style="margin-top:104rpx;width: 460rpx;" />
+
+  <view style="width: 90%;">
+    <van-cell-group border="{{false}}" custom-class="flex-col gap-36 mt-64 c-gray">
+      <van-field model:value="{{phone}}" placeholder="请输入手机号" type="number" custom-style="{{inputCustomStyle}}" clearable border="{{false}}" left-icon="phone"> </van-field>
+      <van-field model:value="{{passwrod}}" placeholder="请输入密码" custom-style="{{inputCustomStyle}}" clearable password border="{{false}}" left-icon="lock"> </van-field>
+      <van-field model:value="{{confirmPasswrod}}" placeholder="请确认密码" custom-style="{{inputCustomStyle}}" clearable password border="{{false}}" left-icon="lock" wx:if="{{ !isLogin }}"> </van-field>
+    </van-cell-group>
+  </view>
+  <view class="flex-r-sb w-pc-90">
+    <text class="c-link" bindtap="switchType" wx:if="{{ isLogin }}">注册账号></text>
+    <text class="c-link" bindtap="switchType" wx:else="{{ !isLogin }}">返回登录</text>
+    <text class="c-gray">登录遇到问题?</text>
+  </view>
+  <van-button round bind:click="login" color="#5496D7" custom-style="width:90vw;">{{isLogin? '登录':'一键注册'}}</van-button>
+  <van-checkbox value="{{ policyChecked }}" bind:change="swPolicyChecked">我已阅读并同意<text class="c-link">《 知约 隐私政策》</text></van-checkbox>
+  <view class="flex-col flex-c-c">
+    <image src="../../images/wx-logo.svg" mode="widthFix" style="width: 128rpx;"/>
+    <text class="c-gray">一键登录</text>
+  </view>
+</view>

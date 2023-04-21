@@ -1,0 +1,11 @@
+.tab-con{
+  position: absolute;
+  top: 160rpx;
+  width: 100%;
+  padding-bottom: 64rpx;
+}
+
+.room{
+  padding: 12rpx;
+  border-radius: 60rpx;
+}

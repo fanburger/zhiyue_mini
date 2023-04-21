@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "article-section":"/components/article-section/index"
+  }
+}

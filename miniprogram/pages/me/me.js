@@ -1,34 +1,11 @@
-const app = getApp()
-
+// pages/me/me.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    phone: '',
-    password: '',
-    isLogin: true,
-    policyChecked: false,
-    inputCustomStyle: 'border-radius: 66rpx;border: 6rpx solid #86D6DD;box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.1);'
-  },
 
-  login: function () {
-    wx.switchTab({
-      url: '/pages/home/home'
-    })
-  },
-
-  switchType: function () {
-    this.setData({
-      isLogin: !this.data.isLogin
-    })
-  },
-
-  swPolicyChecked: function () {
-    this.setData({
-      policyChecked: !this.data.policyChecked
-    })
   },
 
   /**
